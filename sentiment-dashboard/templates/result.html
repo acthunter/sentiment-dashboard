@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Hasil Analisis Sentimen</h1>
+        <p>Input Teks: <strong>{{ text_input }}</strong></p>
+        <p>Sentimen: <strong>{{ sentiment }}</strong></p>
+        <br>
+        <a href="/">Kembali ke Halaman Utama</a>
+    </div>
+</body>
+</html>

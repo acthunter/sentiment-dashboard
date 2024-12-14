@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Sentiment Analysis Dashboard</h1>
+        <form action="/sentiment" method="POST">
+            <label for="text_input">Masukkan Teks untuk Analisis Sentimen:</label>
+            <textarea id="text_input" name="text_input" rows="5" cols="50" placeholder="Masukkan teks di sini..."></textarea>
+            <br>
+            <button type="submit">Analisis Sentimen</button>
+        </form>
+    </div>
+</body>
+</html>
